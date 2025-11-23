@@ -102,9 +102,9 @@ export default function LinksTable() {
         <div className="bg-white rounded-2xl shadow-xl shadow-slate-200/60 border border-slate-100 overflow-hidden">
             <div className="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50/50">
                 <h2 className="text-xl font-semibold text-slate-900 flex items-center gap-2">
-                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-blue-600 text-sm font-bold">
+                    {/* <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-blue-600 text-sm font-bold">
                         2
-                    </span>
+                    </span> */}
                     Your Links
                 </h2>
                 <span className="text-sm font-medium text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
@@ -124,7 +124,7 @@ export default function LinksTable() {
                     </thead>
                     <tbody className="divide-y divide-slate-100">
                         {links.map((link) => {
-                            const shortUrl = `${API_BASE_URL}/${link.code}`;
+                            const shortUrl = `${import.meta.env.VITE_OPEN}/${link.code}`;
 
                             return (
                                 <tr
@@ -145,9 +145,9 @@ export default function LinksTable() {
                                                 >
                                                     /{link.code}
                                                 </a>
-                                                <span className="text-xs text-slate-400">
+                                                {/* <span className="text-xs text-slate-400">
                                                     localhost:5000
-                                                </span>
+                                                </span> */}
                                             </div>
                                         </div>
                                     </td>
