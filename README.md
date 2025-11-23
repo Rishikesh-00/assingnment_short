@@ -51,6 +51,20 @@ Frontend: **React + Vite + Tailwind CSS**
   - Original URL
   - Click count
   - Actions: Copy link, Delete
+ 
+  ### .env
+
+  **Backend**
+  PORT=5000
+  DATABASE_URL=<your_neon_connection_string>
+  JWT_SECRET=<any-secret-string>
+  NODE_ENV=development
+  BASE_URL="http://localhost:5000"
+
+
+  **Frontend**
+  VITE_BASE_URL=<Backend-url>/api
+  VITE_OPEN=<Backend-url>
 
 ---
 
